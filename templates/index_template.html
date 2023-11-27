@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>{{ site_name }} - Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/">Home</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <ul>
+                    {% for post in posts %}
+                    <li><a href="{{ post.link }}">{{ post.date }} {{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <a class="footer_link" href="{{ author_website }}">{{ author_name }}</a>
+        </footer>
+    </div>
+</body>
+
+</html>

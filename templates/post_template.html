@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post.css">
+    <title>{{ post.title }} | Your Blog Title</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/">Home</a>
+            </nav>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.date }}</p>
+        </header>
+        <main>
+            {{ post.content|safe }}
+        </main>
+        <footer>
+            <a class="footer_link" href="{{ post.author_website }}">{{ post.author_name }}</a>
+        </footer>
+    </div>
+</body>
+
+</html>

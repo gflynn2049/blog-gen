@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {@apply w-full flex justify-center}
+main {@apply py-6}
+.container {@apply max-w-3xl py-24}
+.footer_link {@apply underline text-sm}
+
+.heading1 { @apply text-4xl font-bold mb-4; }
+.heading2 { @apply text-3xl font-bold mb-3; }
+.heading3 { @apply text-2xl font-bold mb-2; }
+.heading4 { @apply text-xl font-bold mb-2; }
+.heading5 { @apply text-lg font-bold mb-1; }
+.heading6 { @apply text-base font-bold; }
+
+.paragraph { @apply text-base leading-6; }
+.list { @apply list-disc pl-4; }
+.listItem { @apply mb-2; }
+.blockquote { @apply border-l-4 border-gray-300 pl-4 italic; }
+.codeBlock { @apply bg-gray-100 p-2 mb-4; }
+
+.hr { @apply border-t border-gray-300 my-4; }
+
+.inlineCode { @apply bg-gray-100 px-1; }
