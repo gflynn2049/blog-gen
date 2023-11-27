@@ -2,17 +2,8 @@
 
 blog-gen is a simple tool written in Python for generating static HTML blog pages from Markdown files.
 
-## Getting Started
 
-### Prerequisites
-
-make sure you have Python installed.
-
-```bash
-pip install -r requirements.txt
-```
-
-### Usage
+## usage
 Create a New Draft:
 
 ```bash
